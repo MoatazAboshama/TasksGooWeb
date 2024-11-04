@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  background: #fbf6f6;
+}
+
+.main .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 3em;
+  box-shadow: 0 -5px 20px #919191;
+}
+
+.main .header a {
+  font-family: "Great Vibes", cursive;
+}
+
+.main .header .bebo a {
+  color: #bd5d38;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.main .header .data {
+  display: flex;
+  gap: 3em;
+}
+
+.main .header .data .link {
+  color: #423f3f;
+  font-size: 1.5em;
+}
+
+.main .header .data .link:hover {
+  color: #bd5d38;
+  font-weight: bold;
+}
+
+.main .header .data .link::before {
+  content: "";
+  width: 0;
+  margin: auto;
+  background-color: #bd5d38;
+  display: block;
+  height: 2px;
+  position: relative;
+  top: 2em;
+  transition: 0.5s;
+}
+
+.main .header .data .link:hover::before {
+  width: 100%;
+}
+
+.main .sec1 .left-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 4em 4em 0em 4em;
+  color: #423f3f;
+}
+
+.main .sec1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .sec1 .left-main h1 {
+  font-size: 3.5em;
+}
+
+.main .sec1 .left-main p {
+  font-size: 1.5em;
+}
+
+.main .sec1 .left-main .button {
+  width: 30%;
+  color: white;
+  background: #bd5d38;
+  border-radius: 7px;
+  padding: 0.8em;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.main .sec1 .left-main .button:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+.main .sec1 .right-main {
+  display: flex;
+  justify-content: end;
+  padding: 0em 3em;
+}
+
+.main .sec1 .right-main img {
+  background: #bd5d38;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .main .header {
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 1em;
+    gap: 1em;
+  }
+  .main .header .data {
+    gap: 1em;
+  }
+  .main .header .data .link::before {
+    top: 1.7em;
+  }
+  .main .sec1 {
+    gap: 1em;
+  }
+  .main .sec1 .left-main h1 {
+    font-size: 3em;
+  }
+  .main .sec1 .left-main .button {
+    width: 100%;
+  }
+
+  .main .sec1 .right-main {
+    justify-content: center;
+  }
+}
+
+/* second section */
+
+.main .sec2 {
+  display: flex;
+  padding: 4em;
+}
+
+.main .sec2 .image {
+  width: 100%;
+}
+
+.main .sec2 .image img {
+  width: 140%;
+  box-shadow: 0 0 25px -10px #000000b5;
+}
+
+.main .sec2 .inside {
+  margin: auto;
+  background: white;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-shadow: 0 0 25px -10px #000000b5;
+}
+
+.main .sec2 .inside .foods h2 {
+  color: #bd5d38;
+  font-family: "Great Vibes", cursive;
+  font-size: 2em;
+}
+
+.main .sec2 .inside .foods h1 {
+  font-size: 3.5em;
+}
+
+.main .sec2 .inside p {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.main .sec2 .inside a {
+  color: #bd5d38;
+  font-size: 1.7em;
+  width: 40%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .main .sec2 .image {
+    width: 200%;
+  }
+  .main .sec2 .inside {
+    padding: 1.5em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main .sec2 {
+    flex-direction: column;
+    padding: 4em 1em;
+  }
+  .main .sec2 .image img {
+    width: 100%;
+  }
+  .main .sec2 .inside {
+    padding: 1em;
+  }
+  .main .sec2 .inside a {
+    width: 50%;
+  }
+}
+
+/* third section */
+
+.main .sec3 {
+  padding: 4em 0em;
+}
+
+.main .sec3 .reservations {
+  display: flex;
+  flex-direction: column;
+  gap: 0em;
+  align-items: center;
+}
+
+.main .sec3 .reservations h2 {
+  color: #bd5d38;
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5em;
+}
+
+.main .sec3 .reservations h1 {
+  color: #423f3f;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 4em;
+}
+
+.sec3 .menus {
+  display: flex;
+  flex-direction: row;
+  padding: 2em 4.5em;
+  justify-content: space-evenly;
+}
+
+.sec3 .menus .menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 50%;
+}
+
+.sec3 .menus .menu .img-menu {
+  width: 40%;
+  margin: 1em;
+}
+
+.sec3 .menus .menu .img-menu img {
+  width: 100%;
+}
+
+.menus .menu .foods-menu {
+  padding: 1em 1em 0em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5em;
+  border-left: 3px solid #bd5d38;
+  color: #423f3f;
+}
+
+.menus .menu .foods-menu h3 {
+  color: #423f3f;
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.menus .menu .foods-menu .price {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.2em;
+}
+
+.menus .menu .foods-menu .price h6 {
+  color: #4c7c50;
+  font-size: 1em;
+}
+
+.menus .menu .foods-menu .price p {
+  font-size: 1.2em;
+}
+
+.main .sec3 .download {
+  text-align: center;
+  padding: 1em;
+}
+
+.main .sec3 .download button {
+  background-color: teal;
+  border: 2px solid orange;
+  padding: 0.5em 0.5em;
+  border-radius: 7px;
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .sec3 .menus {
+    padding: 2em 1.5em;
+  }
+  .sec3 .menus .menu .img-menu {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sec3 .menus {
+    flex-direction: column;
+    padding: 2em 1em;
+    gap: 3em;
+  }
+  .sec3 .menus .menu {
+    width: 100%;
+  }
+  .sec3 .menus .menu .img-menu {
+    margin: 0;
+  }
+  .sec3 .menus .menu .foods-menu {
+    padding: 1em 1em 0em 1em;
+  }
+}
+
+/* fourth section */
+.main .sec4 {
+  height: 35vh;
+  margin: 4.5em 0;
+}
+
+.main .sec4 .backgraund {
+  background: url("../images/restaurant-bg-2.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(0.5);
+}
+
+/* fifth section */
+
+.main .sec5 {
+  padding: 2em 0em 1em 0em;
+}
+
+.main .sec5 .top-sec5 {
+  padding: 0em 0em 4em 0em;
+  text-align: center;
+  font-size: 1.3em;
+  color: #bd5d38;
+  font-family: "Great Vibes", cursive;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .sec5 .contant {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 3em;
+}
+
+.main .sec5 .contant .left-contant {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.main .sec5 .contant .data-contant {
+  background-color: #423f3f;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1em;
+  color: white;
+  box-shadow: 0 0px 10px #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5em;
+}
+
+.main .sec5 .bottom-sec5 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.main .sec5 .bottom-sec5 p {
+  color: #423f3f;
+  font-size: 1.5em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.main .sec5 .bottom-sec5 p span {
+  color: #bd5d38;
+}
+
+@media screen and (max-width: 767px) {
+  .main .sec5 .contant {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
